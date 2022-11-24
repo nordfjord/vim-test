@@ -6,6 +6,7 @@ let g:loaded_test = 1
 let g:test#plugin_path = expand('<sfile>:p:h:h')
 
 let g:test#default_runners = {
+  \ 'fsharp':     ['DotnetTest'],
   \ 'CSharp':     ['Xunit', 'DotnetTest'],
   \ 'Clojure':    ['FireplaceTest'],
   \ 'Crystal':    ['CrystalSpec'],
